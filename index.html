@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - ManageBac GPA Calculator</title>
+  <meta name="description" content="Privacy Policy for the ManageBac GPA Calculator Chrome extension.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18324a;
+      --muted: #5c6f82;
+      --line: #d9e4ef;
+      --card: rgba(255, 255, 255, 0.92);
+      --blue: #1d5f9d;
+      --teal: #157f78;
+      --gold: #f3b23d;
+      --bg1: #f5fbff;
+      --bg2: #fff9ef;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font: 16px/1.7 "Segoe UI", "Helvetica Neue", Arial, "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(21, 127, 120, 0.10), transparent 28%),
+        radial-gradient(circle at left 18%, rgba(243, 178, 61, 0.16), transparent 22%),
+        linear-gradient(135deg, var(--bg1), var(--bg2));
+    }
+
+    .shell {
+      width: min(960px, calc(100vw - 32px));
+      margin: 24px auto 56px;
+    }
+
+    .hero,
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(24, 50, 74, 0.08);
+      border-radius: 24px;
+      box-shadow: 0 22px 48px rgba(24, 50, 74, 0.10);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 34px 34px 30px;
+      background:
+        linear-gradient(135deg, rgba(24, 50, 74, 0.98), rgba(29, 95, 157, 0.96) 56%, rgba(21, 127, 120, 0.95));
+      color: #fff;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -58px;
+      top: -72px;
+      width: 220px;
+      height: 220px;
+      border-radius: 40px;
+      background: rgba(255, 255, 255, 0.10);
+      transform: rotate(24deg);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 14px 0 10px;
+      font-size: clamp(30px, 5vw, 46px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 760px;
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .meta {
+      margin-top: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .meta span {
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.12);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 18px;
+    }
+
+    .card {
+      padding: 24px 24px 20px;
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    .sub {
+      display: block;
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    .callout {
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid rgba(21, 127, 120, 0.16);
+      background: linear-gradient(135deg, rgba(21, 127, 120, 0.10), rgba(243, 178, 61, 0.10));
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .footer {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    a {
+      color: var(--blue);
+    }
+
+    @media (max-width: 720px) {
+      .shell {
+        width: min(100vw - 18px, 960px);
+        margin: 10px auto 36px;
+      }
+
+      .hero,
+      .card {
+        border-radius: 20px;
+      }
+
+      .hero,
+      .card {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">Privacy Policy</div>
+      <h1>ManageBac GPA Calculator</h1>
+      <p>
+        This Privacy Policy explains what information the extension can access, how it is used,
+        and how user data is handled when the extension runs on supported ManageBac pages.
+      </p>
+      <div class="meta">
+        <span>Effective Date: April 19, 2026</span>
+        <span>Applies to Chrome Extension Use</span>
+        <span>Local-Only Processing</span>
+      </div>
+    </section>
+
+    <section class="grid">
+      <section class="card">
+        <h2>
+          Overview
+          <span class="sub">概述</span>
+        </h2>
+        <p>
+          ManageBac GPA Calculator is a Chrome extension that helps users scan visible ManageBac
+          gradebook tags, calculate weighted GPA or percentage results, display inline summary badges,
+          and generate student trend charts.
+        </p>
+        <p>
+          ManageBac GPA Calculator 是一款 Chrome 扩展，用于扫描 ManageBac 成绩簿页面中可见的标签，
+          计算加权 GPA 或百分比结果，显示行内成绩气泡，并生成学生趋势图。
+        </p>
+        <div class="callout">
+          <strong>Important:</strong> All gradebook processing happens locally in the user's browser.
+          The extension does not upload gradebook content to any external server.
+          <br>
+          <strong>重要说明：</strong>所有成绩数据处理均在用户浏览器本地完成，扩展不会将成绩簿内容上传到任何外部服务器。
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>
+          Data the Extension Can Access
+          <span class="sub">扩展可能访问的数据</span>
+        </h2>
+        <p>
+          When a user opens the extension on a supported ManageBac page, the extension may read visible
+          page content that is necessary to provide its features, including:
+        </p>
+        <p>
+          当用户在受支持的 ManageBac 页面上使用本扩展时，扩展可能会读取提供功能所必需的、当前页面可见内容，包括：
+        </p>
+        <ul>
+          <li>Student names / 学生姓名</li>
+          <li>Assignment titles / 作业标题</li>
+          <li>Assignment dates / 作业日期</li>
+          <li>Visible tags and categories / 可见标签与分类</li>
+          <li>Scores, percentages, and grade symbols / 分数、百分比与字母等级</li>
+          <li>Course or subject information shown in the gradebook / 成绩簿中显示的课程信息</li>
+          <li>User-selected rules, tag groups, and weight settings / 用户选择的规则、标签分组与权重设置</li>
+          <li>Temporary trend chart data used to open the trend view / 用于打开趋势图页面的临时趋势数据</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>
+          How the Data Is Used
+          <span class="sub">数据如何使用</span>
+        </h2>
+        <p>The extension uses accessed data only to provide the user-requested features of the extension.</p>
+        <p>扩展访问这些数据的唯一目的，是实现用户主动使用的扩展功能。</p>
+        <ul>
+          <li>Scan ManageBac tags from the visible gradebook / 从当前可见成绩簿扫描标签</li>
+          <li>Calculate weighted GPA or percentage results / 计算加权 GPA 或百分比结果</li>
+          <li>Display inline badges and trend buttons / 显示成绩气泡与趋势按钮</li>
+          <li>Generate trend charts and PDF-ready reports / 生成趋势图与可导出的 PDF 报告</li>
+          <li>Save local rule settings for later reuse / 保存本地规则设置以供后续复用</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>
+          Storage and Retention
+          <span class="sub">存储与保留</span>
+        </h2>
+        <p>
+          The extension uses Chrome local storage only to save extension settings and temporary data
+          required to open the trend view.
+        </p>
+        <p>
+          本扩展仅使用 Chrome 本地存储来保存扩展设置，以及打开趋势图页面所需的临时数据。
+        </p>
+        <ul>
+          <li>Selected tag groups / 已选标签分组</li>
+          <li>Rule weights / 规则权重</li>
+          <li>Score conversion mode / 分数换算模式</li>
+          <li>Temporary trend chart payload / 临时趋势图数据</li>
+        </ul>
+        <p class="muted">
+          Stored data remains in the user's browser environment and can be removed by clearing extension data
+          or uninstalling the extension.
+        </p>
+        <p class="muted">
+          这些数据保留在用户浏览器本地环境中，用户可以通过清除扩展数据或卸载扩展来移除它们。
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>
+          Data Sharing
+          <span class="sub">数据共享</span>
+        </h2>
+        <p>
+          The extension does not sell, transfer, disclose, or share personal data or gradebook data with
+          third parties.
+        </p>
+        <p>
+          本扩展不会向第三方出售、转移、披露或共享任何个人数据或成绩簿数据。
+        </p>
+        <ul>
+          <li>No remote analytics / 不使用远程分析服务</li>
+          <li>No cloud sync / 不使用云同步</li>
+          <li>No advertising network integration / 不接入广告网络</li>
+          <li>No external server upload of ManageBac gradebook content / 不向外部服务器上传 ManageBac 成绩内容</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>
+          Permissions
+          <span class="sub">权限说明</span>
+        </h2>
+        <ul>
+          <li><strong>activeTab</strong>: used to access the active ManageBac tab after user interaction. / 在用户触发操作后访问当前激活的 ManageBac 标签页。</li>
+          <li><strong>scripting</strong>: used to inject the extension's bundled content script and CSS into supported ManageBac pages. / 用于向受支持的 ManageBac 页面注入扩展自带的脚本和样式。</li>
+          <li><strong>storage</strong>: used to save local extension settings and temporary trend data. / 用于保存本地扩展设置和临时趋势数据。</li>
+          <li><strong>Host access</strong>: limited to <code>managebac.com</code> and <code>managebac.cn</code> pages only. / 主机访问范围仅限于 <code>managebac.com</code> 和 <code>managebac.cn</code> 页面。</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>
+          Compliance Statement
+          <span class="sub">合规声明</span>
+        </h2>
+        <p>
+          The use of information received from Chrome APIs and ManageBac pages will adhere to the
+          Chrome Web Store User Data Policy, including the Limited Use requirements.
+        </p>
+        <p>
+          通过 Chrome API 和 ManageBac 页面获得的信息的使用，将遵守 Chrome Web Store 用户数据政策，
+          包括 Limited Use 相关要求。
+        </p>
+      </section>
+
+      <section class="card">
+        <h2>
+          Contact
+          <span class="sub">联系方式</span>
+        </h2>
+        <p>
+          If you have questions about this Privacy Policy, please contact the publisher using the support
+          email shown on the Chrome Web Store listing for ManageBac GPA Calculator.
+        </p>
+        <p>
+          如果您对本隐私政策有疑问，请通过 Chrome Web Store 中
+          ManageBac GPA Calculator 商店页面显示的支持邮箱联系发布者。
+        </p>
+      </section>
+    </section>
+
+    <p class="footer">
+      © 2026 ManageBac GPA Calculator. This page is intended for Chrome Web Store privacy disclosure.
+    </p>
+  </main>
+</body>
+</html>
